@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.ac.meijo_u.id180441037.task8_pc.Task8_PCController">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <Label text="IP Adress">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="10.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="ipAdress">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="10.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <Label text="Port">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="10.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="portNumber">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="51.0" right="10.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <Label text="Name">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="10.0" top="15.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="name">
+               <HBox.margin>
+                  <Insets bottom="15.0" left="40.0" right="15.0" top="15.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="buttonConnect" mnemonicParsing="false" onAction="#handleButtonConnectAction" text="Connect">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="50.0" right="60.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="buttonDisconnect" mnemonicParsing="false" text="Disconnect">
+               <HBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <TextArea fx:id="chatArea" prefHeight="200.0" prefWidth="300.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" />
+         </VBox.margin>
+      </TextArea>
+      <HBox prefHeight="40.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="message" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets bottom="10.0" left="15.0" right="10.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="buttonSend" mnemonicParsing="false" onAction="#handleButtonSendAction" text="Send">
+               <HBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
